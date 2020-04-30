@@ -7,7 +7,8 @@ const Letter = require("./letter");
  */
 
  class Word extends Letter {
-   constructor(letters) {
+   constructor(constructor, letters) {
+     super(constructor);
      //each word start off with an empty array of letters
      this.letters = [];
    }
